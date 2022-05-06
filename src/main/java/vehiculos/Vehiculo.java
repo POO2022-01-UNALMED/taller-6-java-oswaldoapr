@@ -15,7 +15,7 @@ public class Vehiculo {
 	static int cantidadAutomoviles = 0;
 	static int cantidadCamionetas = 0;
 	static int cantidadCamiones = 0;
-	static ArrayList<Fabricante> fabricantes;
+	static ArrayList<Fabricante> fabricantes = new ArrayList<Fabricante>();
 	
 	Vehiculo(String placa, int puertas, int velocidadMaxima, String nombre, int precio, int peso, String traccion, Fabricante fabricante) {
 		this.placa = placa;
@@ -117,5 +117,9 @@ public class Vehiculo {
 		return "Automoviles: " + Vehiculo.cantidadAutomoviles +
 			   "\nCamionetas: " + Vehiculo.cantidadCamionetas + 
 			   "\nCamiones: " + Vehiculo.cantidadCamiones;
+	}
+	
+	public static ArrayList<Fabricante> getFabricantes() {
+		return Vehiculo.fabricantes;
 	}
 }

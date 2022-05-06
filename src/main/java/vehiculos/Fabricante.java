@@ -27,7 +27,7 @@ public class Fabricante {
 		return this.pais;
 	}
 	
-	public Fabricante fabricaMayorVentas() {
+	public static Fabricante fabricaMayorVentas() {
 		Hashtable<Fabricante, Integer> fabricantes = new Hashtable<Fabricante, Integer>();
 		
 		for(Fabricante fabricante : Vehiculo.getFabricantes()) {
